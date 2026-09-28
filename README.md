@@ -1,1 +1,193 @@
 # fireworks-safety
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معا لبيئة آمنة | مخاطر الألعاب النارية</title>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #ef4444;
+            --bg-light: #f8fafc;
+            --text-main: #334155;
+            --card-bg: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+        /* الهيدر */
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #fff;
+            padding: 70px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent);
+        }
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 15px;
+            color: #f87171;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+        .project-meta {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #f1f5f9;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 10px;
+        }
+        .project-meta span {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+        /* الحاوية العامة */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: var(--primary);
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        /* الشبكة والبطاقات */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 35px 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--accent);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+        .card p {
+            color: #64748b;
+            font-size: 1.05rem;
+        }
+        /* صندوق النصائح والإرشادات */
+        .safety-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-right: 6px solid #10b981;
+            padding: 40px;
+            border-radius: 16px;
+            margin-top: 40px;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.05);
+        }
+        .safety-box h3 {
+            color: #047857;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        .safety-box ul {
+            padding-right: 20px;
+        }
+        .safety-box li {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            color: #065f46;
+        }
+        /* الفوتر */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px;
+            margin-top: 80px;
+            font-size: 1rem;
+            border-top: 1px solid #1e293b;
+        }
+        footer p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>احتفل بوعي.. وتجنب مخاطر الألعاب النارية</h1>
+        <p>نحو احتفالات آمنة وخالية من الإصابات لضمان سلامتك وسلامة من تحب.</p>
+        <div class="project-meta">
+            إعداد الطالبة: <span>كادي حمود العتيبي</span> | إشراف: <span>إدارة الدفاع المدني بمحافظة رجال ألمع</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">لماذا تعتبر الألعاب النارية خطرة؟</h2>
+        
+        <div class="cards-grid">
+            <div class="card">
+                <h3>🔥 الإصابات الجسدية البليغة</h3>
+                <p>تتسبب شراراتها في حروق شديدة بالجلد، وتلف في الأنسجة، وإصابات خطيرة ومباشرة في العين قد تؤدي إلى فقدان البصر تماماً.</p>
+            </div>
+            <div class="card">
+                <h3>💥 خطر الحرائق المفاجئة</h3>
+                <p>الانفجارات غير المدروسة قد تسقط على المروج الجافة أو بالقرب من المواد القابلة للاشتعال، مسببة حرائق مدمرة للمنازل والممتلكات.</p>
+            </div>
+            <div class="card">
+                <h3>🔊 الأضرار النفسية والبيئية</h3>
+                <p>الأصوات الصاخبة المفاجئة تسبب هلعاً شديداً للأطفال، كبار السن، ومرضى القلب، فضلاً عن تلويث الهواء بالمواد الكيميائية السامة.</p>
+            </div>
+        </div>
+
+        <div class="safety-box">
+            <h3>🛡️ إرشادات السلامة والبدائل الآمنة</h3>
+            <ul>
+                <li><strong>البدائل البصرية الآمنة:</strong> استخدام الإضاءات الليزرية وأشرطة الزينة للاحتفال بشكل ممتع دون مخاطر.</li>
+                <li><strong>مسؤولية الأسرة:</strong> منع الأطفال نهائياً من تداول أو إشعال المفرقعات والألعاب النارية بمفردهم.</li>
+                <li><strong>التوعية المجتمعية:</strong> نشر ثقافة السلامة بين الأصدقاء والعائلة للحد من تداول هذه المواد الخطرة.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © حملة التوعية بمخاطر الألعاب النارية 2026</p>
+        <p>إعداد: كادي حمود العتيبي — تحت إشراف إدارة الدفاع المدني بمحافظة رجال ألمع</p>
+    </footer>
+
+</body>
+</html>
